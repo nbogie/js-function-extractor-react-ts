@@ -49,6 +49,8 @@ export function getSortedFunctionCalls(
                 }
 
                 if (info) {
+                    //serialise to string for storage in set (and free deduplication).
+                    // (This is premature optimisation, oops)
                     functionCallsAsStrings.add(
                         serialiseFunctionCallInfoToString(info)
                     );
@@ -64,6 +66,8 @@ export function getSortedFunctionCalls(
             },
         };
     }
+    //TODO: just use an array and de-duplicate later - we're not dealing with millions of calls
+
     const functionCallInfoObjects = Array.from(functionCallsAsStrings)
         .sort()
         .map(deserialiseFunctionCallStringToInfo);
