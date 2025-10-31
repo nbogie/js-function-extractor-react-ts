@@ -8,16 +8,19 @@
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "cli-demo": "tsx src/demo.ts"
+        "cli-demo": "tsx src/demo.ts",
+        "cli-demo2": "tsx src/demoOfMatchup.ts"
     },
     "dependencies": {
         "acorn": "^8.15.0",
         "acorn-walk": "^8.3.4",
+        "lodash": "^4.17.21",
         "react": "^19.1.1",
         "react-dom": "^19.1.1"
     },
     "devDependencies": {
         "@eslint/js": "^9.33.0",
+        "@types/lodash": "^4.17.20",
         "@types/node": "^24.4.0",
         "@types/react": "^19.1.10",
         "@types/react-dom": "^19.1.7",

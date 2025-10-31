@@ -1,5 +1,6 @@
 export const example = `
 //example
+//paste your own js in here to test the function extractor
 
 //"use strict";
 /*
