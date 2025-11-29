@@ -44,6 +44,9 @@ function App() {
     }
     return (
         <>
+            <a href="https://github.com/nbogie/js-function-extractor-react-ts">
+                Source code (React + TS)
+            </a>
             <h1>JS Function-call extractor</h1>
             <div className="card">
                 <textarea
