@@ -72,6 +72,7 @@ function setup() {
     // postInstructionalMessages();
 
     restart();
+    exampleLerping();
 }
 
 function restart() {
@@ -2046,6 +2047,21 @@ function createPhysicsBodyForTerrain(world) {
         );
     }
     return terrainBody;
+}
+
+function exampleLerping(){
+    //test recognition of lerp and p5.Vector lerp (instance and static)
+    
+    //instance method of p5.Vector
+    const myVec = p5.Vector.random2D();
+    const myVec2 = p5.Vector.random2D();
+    myVec.lerp(myVec2, 0.5);
+
+    //static method of p5.Vector
+    p5.Vector.lerp(myVec, myVec2, 0.5);
+
+    //global fn / p5 method
+    lerp(0, 100, 0.5);
 }
 `
     .replace("\\`", "`")
